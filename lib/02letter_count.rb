@@ -13,16 +13,16 @@ def letter_count(str)
   # create a hash
   str_arr = str.split('')
   p str_arr
-  occurence = {}
+  occurrence = {} # hash
 
-  str_arr.each do |letter|
-    if occurence [letter]
-      occurence[letter] += 1
+  str_arr.each do |i| # i is each value in the array
+    if occurrence[i]
+      occurrence[i] += 1
     else
-      occurence[letter] = 1
+      occurrence[i] = 1
     end
   end
-  p occurence
+  p occurrence
 end
 
 letter_count('banana')

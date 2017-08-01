@@ -9,3 +9,13 @@
 #
 # > 120
 #
+def factorial(num)
+  if num == 1
+    result = 1
+  else
+    result = num * factorial(num - 1)
+  end
+  p result
+end
+
+factorial(5)
